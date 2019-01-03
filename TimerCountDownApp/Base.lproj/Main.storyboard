@@ -26,6 +26,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="5yv-31-UNf">
                                 <rect key="frame" x="8" y="318.5" width="359" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ymk-eL-jKb"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-o7-1YW">
                                 <rect key="frame" x="0.0" y="547" width="375" height="60"/>
@@ -37,6 +40,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLt-92-gdw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R00-K5-ZHN">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
@@ -47,6 +53,9 @@
                                 <state key="normal" title="STOP">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0v-1M-RU3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.33664127237265984" blue="0.54666272002428318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,10 +76,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lblTime" destination="UDf-Hu-n8m" id="JJp-0Q-UhW"/>
+                        <outlet property="slider" destination="5yv-31-UNf" id="Uzb-Gp-74Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="146.17691154422789"/>
+            <point key="canvasLocation" x="223" y="134"/>
         </scene>
     </scenes>
 </document>
